@@ -1,0 +1,58 @@
+body {
+    background-color: #bdc951;
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    justify-content: center; /*Centraliza horizontalmente*/
+    align-items: center; /* Centraliza verticalmente*/
+    height: 100vh; /*Faz o body ter a altura total da tela */ /*vh é viewport height (altura da janela de visualização) */
+    margin: 0; /* Remove margens padrão do navegador */
+}
+#cartao {
+    /*O # é usado para o id*/
+    background-color: #9b51c9;
+    padding: 30px; /*faz um espaçamendo entre a borda e o assunto*/
+    border-radius: 20px; /*cria uma borda redonda*/
+    max-width: 350px; /*largura do conteudo*/
+    width: 90%;
+    margin: auto; /*centralizar a caixa*/
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* o (0,0,0,0.2) é a cor preta com 20% de transparencia(0.2)*/ 
+    display: flex;
+    flex-direction: column;/*Organiza os itens em coluna*/
+    align-items: center;/*cemtraliza os itens horizontalmente*/
+    gap: 10px;/* cria um espaço entre cada item*/
+    transition: 0.3s;
+}
+#cartao:hover {
+    background-color: #811899; /*adicionar cor ao fundo*/
+    cursor: pointer; /*faz a seta do mouse virar "mãozinha"*/
+    transition: 0.3s; /*adiciona uma mudança de cor suave*/
+}
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* pra deixar bem redondinho */
+    object-fit: cover; /* Garante que a foto não fique esticada */
+    border: 3px solid white;
+    margin-bottom: 15px;
+}
+.botao {
+    /*usa o . para uma class*/
+    display: inline-block;
+    background-color: #0077b5;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none; /*remove o sublinhado do link*/
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.botao:hover {
+    background-color: #005a87;
+}
+.github {
+    /* criando o item github, faz com que use o botão e adicione a difereça nesse aqui */
+    background-color: black;
+}
+.instagram {
+    background-color: #e1306c;
+}
